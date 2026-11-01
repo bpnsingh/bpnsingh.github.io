@@ -35,4 +35,4 @@ pytest
 Differences from the original: SQLite instead of PostgreSQL, and one small service instead of 12.
 
 ## Status
-The original suite was built for an employer, so its source is not public. The demo above is the public version.
+**Confidential.** The original suite was built for an employer, so its code, data and internal details cannot be shared. The demo above is a separate, clean-room example that uses none of it. Happy to discuss the original design in an interview.

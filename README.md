@@ -23,7 +23,7 @@ I design high-signal quality engineering systems for enterprise-scale platforms:
 | [Android Performance Logger Daemon](projects/android-performance-logger) | Python, ADB, Asyncio, Grafana | Dialpad, 2020–Present |
 | [Python Microservice API Test Suite](projects/microservice-api-test-suite) | Python, Pytest, Pydantic, Requests, PostgreSQL | Theatro, 2016–2019 |
 
-These were built for employers, so their code is not published here. Each folder describes the problem, approach and outcome; public demos are linked where they exist.
+**Confidential:** these were built for employers, so their code and internal details cannot be shared. Each folder describes the problem, approach and outcome as stated on my resume. Where I have my own public work on the same ideas, it is linked.
 
 ## Skills
 

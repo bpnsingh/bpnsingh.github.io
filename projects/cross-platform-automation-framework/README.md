@@ -22,4 +22,4 @@ Android, iOS and web products each had separate, duplicated test code and a heav
 - [AppiumConf-24](https://github.com/bpnsingh/AppiumConf-24): Twilio API integration with Appium for transcription validation.
 
 ## Status
-The Dialpad framework is employer code and not public. The repos above are public examples of the same approach.
+**Confidential.** The Dialpad framework is employer code, so the source and internal details cannot be shared. The description above is limited to what is already on my resume. The repos above are my own public projects that use the same approach. Happy to discuss the design in an interview.

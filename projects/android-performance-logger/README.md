@@ -18,4 +18,4 @@ Performance regressions on physical Android devices were found late, because not
 - [Android-App-Profiling](https://github.com/bpnsingh/Android-App-Profiling): an earlier public Android app performance logger.
 
 ## Status
-The Dialpad daemon is employer code and not public. The repo above is the public starting point for this idea.
+**Confidential.** The Dialpad daemon is employer code, so the source and internal details cannot be shared. The description above is limited to what is already on my resume. The repo above is my own public, earlier work on the same idea. Happy to discuss the design in an interview.

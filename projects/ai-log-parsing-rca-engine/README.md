@@ -17,4 +17,4 @@ A Python-native microservice that:
 - Introduced predictive defect surfacing into nightly CI runs.
 
 ## Status
-Built for an employer, so the source is not public. A sanitized public demo (sample logs, no proprietary data) is planned.
+**Confidential.** This was built for an employer, so the code, data and internal details cannot be shared. The description above is limited to what is already on my resume. Happy to discuss the design and approach in an interview.
