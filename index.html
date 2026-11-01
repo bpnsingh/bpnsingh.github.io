@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bipin Sengar · SDET</title>
+<meta name="description" content="Bipin Sengar — Software Development Engineer in Test. Mobile automation, CI/CD and quality engineering.">
+<style>
+  :root {
+    color-scheme: dark light;
+    --bg: #0b0f17; --panel: #131a26; --line: #222c3d; --text: #e7ecf4; --muted: #8f9db3;
+    --accent: #5eead4; --accent2: #818cf8;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f6f8fb; --panel: #fff; --line: #e1e7ef; --text: #0f1724; --muted: #5b6b82; --accent: #0f766e; --accent2: #4338ca; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 96px 0 56px;
+           background: radial-gradient(60% 80% at 15% 0%, color-mix(in srgb, var(--accent2) 22%, transparent), transparent 70%); }
+  .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; }
+  h1 { font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.05; margin: 12px 0 16px; letter-spacing: -.03em; }
+  h1 span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .lead { max-width: 640px; color: var(--muted); font-size: 1.15rem; margin: 0 0 32px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 20px; border-radius: 999px;
+         border: 1px solid var(--line); background: var(--panel); font-weight: 600; transition: transform .15s, border-color .15s; }
+  .btn:hover { transform: translateY(-2px); border-color: var(--accent); }
+  .btn.primary { background: var(--accent); color: #04211d; border-color: transparent; }
+  @media (prefers-color-scheme: light) { .btn.primary { color: #fff; } }
+  .skills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+  .skills li { list-style: none; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line);
+               color: var(--muted); font-size: .85rem; }
+  .skills { padding: 0; }
+  h2 { font-size: 1.5rem; margin: 0 0 24px; letter-spacing: -.01em; }
+  section { padding: 24px 0 72px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
+  .card { display: flex; flex-direction: column; gap: 10px; padding: 20px; border-radius: 16px;
+          background: var(--panel); border: 1px solid var(--line); min-height: 150px;
+          transition: transform .15s, border-color .15s; }
+  .card:hover { transform: translateY(-3px); border-color: var(--accent2); }
+  .card h3 { margin: 0; font-size: 1.05rem; word-break: break-word; }
+  .card p { margin: 0; color: var(--muted); font-size: .92rem; flex: 1; }
+  .meta { display: flex; gap: 14px; color: var(--muted); font-size: .8rem; align-items: center; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent2); display: inline-block; margin-right: 6px; }
+  .note { color: var(--muted); }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: .9rem; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Software Development Engineer in Test</div>
+    <h1>Hi, I'm <span>Bipin Sengar</span></h1>
+    <p class="lead">I use automation to raise software quality and make testing faster — mobile, video calling and CI/CD pipelines that run around the clock.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://www.linkedin.com/in/bipinsengar" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/bpnsingh" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <ul class="skills" aria-label="Skills">
+      <li>Appium</li><li>Android</li><li>Robot Framework</li><li>Java</li><li>Python</li><li>CI/CD</li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Projects</h2>
+    <div id="repos" class="grid" aria-live="polite"><p class="note">Loading repositories…</p></div>
+  </section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Bipin Sengar · Projects load live from <a href="https://github.com/bpnsingh" style="text-decoration:underline">GitHub</a></div></footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const el = document.getElementById('repos');
+  const make = (tag, props = {}, text) => Object.assign(document.createElement(tag), props, text != null ? { textContent: text } : {});
+
+  fetch('https://api.github.com/users/bpnsingh/repos?per_page=100&sort=pushed')
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(repos => {
+      const list = repos.filter(r => !r.fork && r.name !== 'bpnsingh.github.io')
+                        .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at));
+      el.replaceChildren(...list.map(r => {
+        const card = make('a', { className: 'card', href: r.html_url, target: '_blank', rel: 'noopener' });
+        const meta = make('div', { className: 'meta' });
+        if (r.language) { const l = make('span'); l.append(make('i', { className: 'dot' }), r.language); meta.append(l); }
+        if (r.stargazers_count) meta.append(make('span', {}, '★ ' + r.stargazers_count));
+        meta.append(make('span', {}, 'Updated ' + new Date(r.pushed_at).toLocaleDateString(undefined, { month: 'short', year: 'numeric' })));
+        card.append(make('h3', {}, r.name), make('p', {}, r.description || 'No description yet.'), meta);
+        return card;
+      }));
+    })
+    .catch(() => el.replaceChildren(make('p', { className: 'note' }, 'Could not load repositories right now — see them on GitHub.')));
+</script>
+</body>
+</html>
