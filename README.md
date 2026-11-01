@@ -1,61 +1,38 @@
-**Bipin Sengar bpnsengar@outlook.com**
+# Bipin Singh Sengar
 
-**+91-7760693939 [www.linkedin.com/in/bipinsengar](http://www.linkedin.com/in/bipinsengar)**
+**Lead SDET & Automation Architect** · 15 years in quality engineering · PMP certified
 
-Software Development Engineer in Test
+[Portfolio site](https://bpnsingh.github.io) · [LinkedIn](https://www.linkedin.com/in/bipinsengar) · [Email](mailto:bipin.csit.etc@gmail.com)
 
-**EXPERIENCE**
+I design high-signal quality engineering systems for enterprise-scale platforms: Python automation frameworks, AI-driven QA tooling, self-healing test infrastructure and CI/CD quality gates, plus mentoring SDET teams.
 
-**Dialpad,** Bengaluru — *SDET*
+## Experience
 
-May 2019 - PRESENT
+| Company | Role | Period |
+|---|---|---|
+| **Dialpad**, Bengaluru (Remote) | Lead SDET | May 2019 – Present |
+| **Theatro**, Bengaluru | Lead Test Engineer | Jun 2014 – May 2019 |
+| **Wipro Technologies**, Hyderabad / Bangalore | Test Engineer | Mar 2011 – Jun 2014 |
 
-- Created and Maintained Android Automation using Robot Framework and achieved 90 % automation for smoke cases.
-- Automated verification of live calls.
-- Automated verification of video feeds for online meetings.
-- Benchmarked conference video app with open source tools
-- Moved mobile automation setup to cloud for 24/7 CI/CD.
+## Key Python projects
 
-**Theatro Labs,** Bengaluru — *Test Lead*
+| Project | Stack | Where |
+|---|---|---|
+| [AI-Powered Log Parsing & RCA Engine](projects/ai-log-parsing-rca-engine) | Python, LangChain, Anthropic Claude API, Pytest, GCP | Dialpad, 2022–Present |
+| [Cross-Platform Mobile & Web Automation Framework](projects/cross-platform-automation-framework) | Python, Robot Framework, Appium, Selenium, Docker | Dialpad, 2019–Present |
+| [Android Performance Logger Daemon](projects/android-performance-logger) | Python, ADB, Asyncio, Grafana | Dialpad, 2020–Present |
+| [Python Microservice API Test Suite](projects/microservice-api-test-suite) | Python, Pytest, Pydantic, Requests, PostgreSQL | Theatro, 2016–2019 |
 
-June 2014 - May 2019
+These were built for employers, so their code is not published here. Each folder describes the problem, approach and outcome; public demos are linked where they exist.
 
-- Created and maintained End to End Automation suite for Theatro proprietary client with python.
-- Automated Retail Android and iOS Apps.
-- Created performance testing suite with Jmeter and python
-- Led  4 members team and guided them on Test Planning,execution.
+## Skills
 
-**Wipro Technologies,** Hyderabad — *Test Engineer*
+- **Languages:** Python (expert), Java, TypeScript, Shell
+- **Automation:** Pytest, Robot Framework, Appium, Selenium, Playwright, Maestro, Rest-Assured, Pytest-BDD
+- **AI/LLM tooling:** Anthropic Claude API, LangChain, prompt engineering, intelligent log parsing, AI-assisted test generation, self-healing automation
+- **Infrastructure & CI/CD:** Docker, Kubernetes, GCP, PostgreSQL, GitHub Actions, Jenkins, Harness, JMeter, SonarQube, Grafana
 
-March 2011- June 2014
+## Education & certifications
 
-- Added test cases for automated suite to test 3G calls.
-- Automated routing of mobile scenarios with AT commands
-- Tested Network protocols against 3GPP standard.
-
-**SKILLS**
-
-Python,Test Architect,Robot Framework, Appium, pytest,system design,DSA, CI/CD, Android app testing,Github action, performance testing, SIP Test ,VoIP Test,TWILIO
-
-**AWARDS/CERTIFICATES**
-
-- **Certified Scrum master**
-- **Robot Framework Certification from udemy**
-- **AIML certificate from Coursera**
-
-**LANGUAGES**
-
-- English
-- Hindi
-
-**Innovis Technologies,** Gurgaon — *Junior Engineer*
-
-Oct 2010-  Dec 2010
-
-- Worked as RF survey engineer for 3G ready Implementation.
-
-**EDUCATION**
-
-**CSVTU** Bhilai — *BE in Electronics & Telecommunication*
-
-July 2006 - June 2010
+- B.E. Electrical, Electronics and Communications Engineering, CSVTU Bhilai (2006–2010)
+- Project Management Professional (PMP), Project Management Institute

@@ -3,40 +3,57 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bipin Sengar · SDET</title>
-<meta name="description" content="Bipin Sengar — Software Development Engineer in Test. Mobile automation, CI/CD and quality engineering.">
+<title>Bipin Sengar · Lead SDET &amp; Automation Architect</title>
+<meta name="description" content="Bipin Sengar — Lead SDET and Automation Architect with 15 years of experience. Python automation frameworks, AI-driven QA tooling and CI/CD quality gates.">
 <style>
   :root {
     color-scheme: dark light;
     --bg: #0b0f17; --panel: #131a26; --line: #222c3d; --text: #e7ecf4; --muted: #8f9db3;
-    --accent: #5eead4; --accent2: #818cf8;
+    --accent: #5eead4; --accent2: #818cf8; --on-accent: #04211d;
   }
   @media (prefers-color-scheme: light) {
-    :root { --bg: #f6f8fb; --panel: #fff; --line: #e1e7ef; --text: #0f1724; --muted: #5b6b82; --accent: #0f766e; --accent2: #4338ca; }
+    :root { --bg: #f6f8fb; --panel: #fff; --line: #e1e7ef; --text: #0f1724; --muted: #5b6b82; --accent: #0f766e; --accent2: #4338ca; --on-accent: #fff; }
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body { margin: 0; background: var(--bg); color: var(--text);
          font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
   a { color: inherit; text-decoration: none; }
   .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
-  header { padding: 96px 0 56px;
+  header { padding: 88px 0 48px;
            background: radial-gradient(60% 80% at 15% 0%, color-mix(in srgb, var(--accent2) 22%, transparent), transparent 70%); }
   .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .8rem; }
   h1 { font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.05; margin: 12px 0 16px; letter-spacing: -.03em; }
   h1 span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .lead { max-width: 640px; color: var(--muted); font-size: 1.15rem; margin: 0 0 32px; }
+  .lead { max-width: 700px; color: var(--muted); font-size: 1.1rem; margin: 0 0 28px; }
   .btns { display: flex; flex-wrap: wrap; gap: 12px; }
   .btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 20px; border-radius: 999px;
          border: 1px solid var(--line); background: var(--panel); font-weight: 600; transition: transform .15s, border-color .15s; }
   .btn:hover { transform: translateY(-2px); border-color: var(--accent); }
-  .btn.primary { background: var(--accent); color: #04211d; border-color: transparent; }
-  @media (prefers-color-scheme: light) { .btn.primary { color: #fff; } }
-  .skills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
-  .skills li { list-style: none; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line);
-               color: var(--muted); font-size: .85rem; }
-  .skills { padding: 0; }
+  .btn.primary { background: var(--accent); color: var(--on-accent); border-color: transparent; }
+  .stats { display: flex; flex-wrap: wrap; gap: 32px; margin-top: 40px; }
+  .stats div b { display: block; font-size: 1.9rem; letter-spacing: -.02em; color: var(--accent); }
+  .stats div span { color: var(--muted); font-size: .85rem; }
+  nav { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 88%, transparent);
+        backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; gap: 22px; overflow-x: auto; padding-top: 12px; padding-bottom: 12px; }
+  nav a { color: var(--muted); font-size: .9rem; font-weight: 600; white-space: nowrap; }
+  nav a:hover { color: var(--text); }
   h2 { font-size: 1.5rem; margin: 0 0 24px; letter-spacing: -.01em; }
-  section { padding: 24px 0 72px; }
+  section { padding: 56px 0 8px; scroll-margin-top: 48px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0 0 14px; }
+  .tags li { list-style: none; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line);
+             color: var(--muted); font-size: .85rem; background: var(--panel); }
+  .skill-group h3 { font-size: .8rem; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; margin: 18px 0 8px; }
+  .job { display: grid; grid-template-columns: 200px 1fr; gap: 8px 32px; padding: 24px 0; border-top: 1px solid var(--line); }
+  .job:first-of-type { border-top: 0; padding-top: 0; }
+  .job .when { color: var(--muted); font-size: .9rem; }
+  .job h3 { margin: 0; font-size: 1.1rem; }
+  .job .org { color: var(--accent); font-weight: 600; font-size: .95rem; margin-bottom: 8px; }
+  .job ul { margin: 0; padding-left: 18px; color: var(--muted); }
+  .job li { margin-bottom: 6px; }
+  .job li b { color: var(--text); font-weight: 600; }
+  @media (max-width: 700px) { .job { grid-template-columns: 1fr; } }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 16px; }
   .card { display: flex; flex-direction: column; gap: 10px; padding: 20px; border-radius: 16px;
           background: var(--panel); border: 1px solid var(--line); min-height: 150px;
@@ -44,42 +61,138 @@
   .card:hover { transform: translateY(-3px); border-color: var(--accent2); }
   .card h3 { margin: 0; font-size: 1.05rem; word-break: break-word; }
   .card p { margin: 0; color: var(--muted); font-size: .92rem; flex: 1; }
-  .meta { display: flex; gap: 14px; color: var(--muted); font-size: .8rem; align-items: center; }
+  .meta { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font-size: .8rem; align-items: center; }
   .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent2); display: inline-block; margin-right: 6px; }
+  .tag-sm { color: var(--accent); font-size: .75rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
   .note { color: var(--muted); }
-  footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: .9rem; }
+  .edu { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .edu .card { min-height: 0; }
+  footer { margin-top: 72px; border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: .9rem; }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
 </style>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <div class="eyebrow">Software Development Engineer in Test</div>
+    <div class="eyebrow">Lead SDET &amp; Automation Architect</div>
     <h1>Hi, I'm <span>Bipin Sengar</span></h1>
-    <p class="lead">I use automation to raise software quality and make testing faster — mobile, video calling and CI/CD pipelines that run around the clock.</p>
+    <p class="lead">15 years designing high-signal quality engineering systems for enterprise-scale platforms: Python automation frameworks, AI-driven QA tooling, self-healing test infrastructure and CI/CD quality gates. PMP certified, with a "break it to make it better" mindset.</p>
     <div class="btns">
       <a class="btn primary" href="https://www.linkedin.com/in/bipinsengar" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="https://github.com/bpnsingh" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="mailto:bipin.csit.etc@gmail.com">Email</a>
     </div>
-    <ul class="skills" aria-label="Skills">
-      <li>Appium</li><li>Android</li><li>Robot Framework</li><li>Java</li><li>Python</li><li>CI/CD</li>
-    </ul>
+    <div class="stats">
+      <div><b>15 yrs</b><span>in quality engineering</span></div>
+      <div><b>85%</b><span>coverage gain, cross-platform framework</span></div>
+      <div><b>40%</b><span>less debugging time with AI log RCA</span></div>
+      <div><b>6</b><span>engineers mentored</span></div>
+    </div>
   </div>
 </header>
 
+<nav aria-label="Sections"><div class="wrap">
+  <a href="#experience">Experience</a><a href="#projects">Key projects</a><a href="#skills">Skills</a><a href="#repos">GitHub repos</a><a href="#education">Education</a>
+</div></nav>
+
 <main class="wrap">
-  <section>
-    <h2>Projects</h2>
-    <div id="repos" class="grid" aria-live="polite"><p class="note">Loading repositories…</p></div>
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="when">May 2019 – Present<br>Bengaluru, India (Remote)</div>
+      <div>
+        <h3>Lead Software Development Engineer in Test</h3>
+        <div class="org">Dialpad</div>
+        <ul>
+          <li><b>Automation architecture:</b> cross-platform mobile and web framework (Appium + Robot Framework + Python); coverage up 85%, 120+ hours of manual regression removed per release.</li>
+          <li><b>AI-driven QA:</b> Python log-parsing tool (pytest + LangChain + Claude API) cut mean debugging time by 40%; LLM test generation and self-healing locators cut flaky-test triage by 30%.</li>
+          <li><b>Strategy:</b> "Gating vs. Discovery" suites on GitHub Actions and GCP for 99.9% stable build gates.</li>
+          <li><b>Infrastructure:</b> production-like QA environments on GCP with Docker and Kubernetes; Android performance monitoring feeding Grafana.</li>
+          <li><b>Leadership:</b> mentored 6 QA/SDET engineers; shift-left and design-for-testability practices reduced post-deployment defect escape by 25%.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <div class="when">Jun 2014 – May 2019<br>Bengaluru, India</div>
+      <div>
+        <h3>Lead Test Engineer</h3>
+        <div class="org">Theatro</div>
+        <ul>
+          <li>Led a 4-member team building end-to-end automation libraries in Python and Java for Android/iOS communication apps and backend microservice clients.</li>
+          <li>Built reusable Python modules for REST validation, contract testing and UI regression, plus a data-driven pytest fixture library.</li>
+          <li>Ran Jenkins CI quality gates and JMeter performance benchmarking with Python-driven data generation and analysis.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <div class="when">Mar 2011 – Jun 2014<br>Hyderabad / Bangalore, India</div>
+      <div>
+        <h3>Test Engineer</h3>
+        <div class="org">Wipro Technologies</div>
+        <ul>
+          <li>Designed end-to-end test scenarios for packet core networks and mobile systems with Linux-based Python and Shell automation.</li>
+          <li>Wrote test designs from 3GPP and NED documentation; ran regression, system and sanity testing for telecom releases.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Key Python projects</h2>
+    <div class="grid">
+      <a class="card" href="https://github.com/bpnsingh/bpnsingh.github.io/tree/main/projects/ai-log-parsing-rca-engine" target="_blank" rel="noopener">
+        <span class="tag-sm">Dialpad · 2022–Present</span><h3>AI-Powered Log Parsing &amp; RCA Engine</h3>
+        <p>Ingests GCP logs, sends structured prompts to Claude for root cause analysis, and posts Slack-formatted reports from CI. Cut L1 debugging effort by 40%.</p>
+        <div class="meta"><span>Python</span><span>LangChain</span><span>Claude API</span></div></a>
+      <a class="card" href="https://github.com/bpnsingh/bpnsingh.github.io/tree/main/projects/cross-platform-automation-framework" target="_blank" rel="noopener">
+        <span class="tag-sm">Dialpad · 2019–Present</span><h3>Cross-Platform Mobile &amp; Web Automation Framework</h3>
+        <p>Robot Framework library layer, Appium for Android/iOS and Playwright for web, distributed as a versioned Python package. The QA standard at Dialpad.</p>
+        <div class="meta"><span>Python</span><span>Appium</span><span>Playwright</span></div></a>
+      <a class="card" href="https://github.com/bpnsingh/bpnsingh.github.io/tree/main/projects/android-performance-logger" target="_blank" rel="noopener">
+        <span class="tag-sm">Dialpad · 2020–Present</span><h3>Android Performance Logger Daemon</h3>
+        <p>Async daemon polling CPU, memory, battery and frame metrics over ADB, streamed to Grafana for real-time regression detection in CI.</p>
+        <div class="meta"><span>Python</span><span>asyncio</span><span>Grafana</span></div></a>
+      <a class="card" href="https://github.com/bpnsingh/bpnsingh.github.io/tree/main/projects/microservice-api-test-suite" target="_blank" rel="noopener">
+        <span class="tag-sm">Theatro · 2016–2019</span><h3>Python Microservice API Test Suite</h3>
+        <p>Data-driven pytest harness with Pydantic contract checks and a PostgreSQL data factory, covering 12 backend services with zero manual data setup.</p>
+        <div class="meta"><span>Python</span><span>Pytest</span><span>Pydantic</span></div></a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-group">
+      <h3>Languages</h3>
+      <ul class="tags"><li>Python (expert)</li><li>Java</li><li>TypeScript</li><li>Shell</li></ul>
+      <h3>Automation</h3>
+      <ul class="tags"><li>Pytest</li><li>Robot Framework</li><li>Appium</li><li>Selenium</li><li>Playwright</li><li>Maestro</li><li>Rest-Assured</li><li>Pytest-BDD</li></ul>
+      <h3>AI / LLM tooling</h3>
+      <ul class="tags"><li>Anthropic Claude API</li><li>LangChain</li><li>Prompt engineering</li><li>Intelligent log parsing</li><li>AI-assisted test generation</li><li>Self-healing automation</li></ul>
+      <h3>Infrastructure &amp; CI/CD</h3>
+      <ul class="tags"><li>Docker</li><li>Kubernetes</li><li>GCP</li><li>PostgreSQL</li><li>GitHub Actions</li><li>Jenkins</li><li>Harness</li><li>JMeter</li><li>SonarQube</li><li>Grafana</li></ul>
+    </div>
+  </section>
+
+  <section id="repos">
+    <h2>Public repositories</h2>
+    <div id="repos-grid" class="grid" aria-live="polite"><p class="note">Loading repositories…</p></div>
+  </section>
+
+  <section id="education">
+    <h2>Education &amp; certifications</h2>
+    <div class="edu">
+      <div class="card"><span class="tag-sm">2006 – 2010</span><h3>B.E. Electrical, Electronics &amp; Communications Engineering</h3><p>Chhattisgarh Swami Vivekanand Technical University, Bhilai</p></div>
+      <div class="card"><span class="tag-sm">Certification</span><h3>Project Management Professional (PMP)</h3><p>Project Management Institute</p></div>
+    </div>
   </section>
 </main>
 
-<footer><div class="wrap">© <span id="yr"></span> Bipin Sengar · Projects load live from <a href="https://github.com/bpnsingh" style="text-decoration:underline">GitHub</a></div></footer>
+<footer><div class="wrap">© <span id="yr"></span> Bipin Sengar · Repositories load live from <a href="https://github.com/bpnsingh" style="text-decoration:underline">GitHub</a></div></footer>
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
-  const el = document.getElementById('repos');
+  const el = document.getElementById('repos-grid');
   const make = (tag, props = {}, text) => Object.assign(document.createElement(tag), props, text != null ? { textContent: text } : {});
 
   fetch('https://api.github.com/users/bpnsingh/repos?per_page=100&sort=pushed')
