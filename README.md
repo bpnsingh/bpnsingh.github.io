@@ -1,6 +1,6 @@
 # Bipin Singh Sengar
 
-**Lead SDET & Automation Architect** · 15 years in quality engineering · PMP certified
+**Lead SDET & Automation Architect** · 15 years in quality engineering · Certified Scrum Master
 
 [Portfolio site](https://bpnsingh.github.io) · [LinkedIn](https://www.linkedin.com/in/bipinsengar) · [Email](mailto:bipin.csit.etc@gmail.com)
 
@@ -35,4 +35,4 @@ I design high-signal quality engineering systems for enterprise-scale platforms:
 ## Education & certifications
 
 - B.E. Electrical, Electronics and Communications Engineering, CSVTU Bhilai (2006–2010)
-- Project Management Professional (PMP), Project Management Institute
+- Certified Scrum Master
